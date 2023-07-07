@@ -1,0 +1,35 @@
+
+.left-form{
+	-fx-background-color:linear-gradient(to bottom right , #3e7fa4,#3e9aa3);
+	-fx-border-color:#0000;
+	-fx-border-width: .4px 0.0px .4px;
+	}
+.right-form{
+	-fx-background-color:#fff;
+	-fx-border-color:#0000;
+	-fx-border-width: .4px 0.4px .4px 0px;
+}
+.text-field{
+	-fx-font-size:18px;
+	-fx-font-family:"Californian FB";
+	
+	
+}
+
+.login{
+	-fx-background-color:linear-gradient(to bottom right , #3e7fa4,#3e9aa3);
+	-fx-background-radius:5px;
+	-fx-text-fill:#ffff;
+	-fx-cursor:hand;
+}
+.login:hover{
+	-fx-background-color:linear-gradient(to bottom right , #21a7ae,#368981);
+	}
+.close{
+	-fx-background-color:transparent;
+	-fx-cursor:hand;
+	
+}
+.close:hover{
+	-fx-background-color:#FF0000;
+}
