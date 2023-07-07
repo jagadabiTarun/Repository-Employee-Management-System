@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.testapps.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <left>
+      <AnchorPane prefHeight="750.0" prefWidth="381.0" styleClass="left-form" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="37.0" layoutY="425.0" text="Employee Management " textFill="WHITE">
+               <font>
+                  <Font name="Californian FB Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="480.0" text="System" textFill="WHITE">
+               <font>
+                  <Font name="Californian FB Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="209.0" fitWidth="295.0" layoutX="49.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/image-removebg-preview%20(2).png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="750.0" prefWidth="446.0" styleClass="right-form" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="162.0" layoutY="95.0" text="Login" textFill="#3e9aa3">
+               <font>
+                  <Font name="Californian FB Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="221.0" prefHeight="31.0" prefWidth="117.0" text="Username:">
+               <font>
+                  <Font name="Californian FB Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="320.0" text="Password:">
+               <font>
+                  <Font name="Californian FB Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginbtn" layoutX="31.0" layoutY="430.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="49.0" prefWidth="394.0" styleClass="login" stylesheets="@application.css" text="Login">
+               <font>
+                  <Font name="Californian FB Bold" size="25.0" />
+               </font></Button>
+            <PasswordField fx:id="pwd" layoutX="31.0" layoutY="354.0" onAction="#loginAdmin" prefHeight="43.0" prefWidth="396.0" promptText="Enter your Password" />
+            <Button fx:id="closebtn" layoutX="401.0" layoutY="6.0" mnemonicParsing="false" onAction="#close" prefHeight="39.0" prefWidth="38.0" styleClass="close" stylesheets="@application.css">
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" />
+               </graphic>
+            </Button>
+            <TextField fx:id="user" layoutX="31.0" layoutY="260.0" onAction="#loginAdmin" prefHeight="39.0" prefWidth="394.0" promptText="Enter your Username" />
+            <Label layoutX="110.0" layoutY="156.0" text="Sign in to Continue" textFill="#3e9aa3">
+               <font>
+                  <Font name="Californian FB Bold" size="27.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#3e9aa3" glyphName="LOCK" layoutX="273.0" layoutY="133.0" size="2.5em" wrappingWidth="29.571428298950195" />
+            <Button fx:id="loginbtn1" layoutX="32.0" layoutY="499.0" mnemonicParsing="false" onAction="#close" prefHeight="49.0" prefWidth="394.0" styleClass="login" stylesheets="@application.css" text="Cancel">
+               <font>
+                  <Font name="Californian FB Bold" size="25.0" />
+               </font>
+            </Button>
+            <FontAwesomeIcon fill="#b2cce6" glyphName="USER" layoutX="392.0" layoutY="286.0" />
+            <FontAwesomeIcon fill="#b2cce6" glyphName="LOCK" layoutX="392.0" layoutY="381.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
